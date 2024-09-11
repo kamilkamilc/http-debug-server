@@ -1,0 +1,9 @@
+services:
+  http-debug-server:
+    build: ./http-debug-server
+    restart: unless-stopped
+    command:
+    - -port
+    - "1337"
+    ports:
+      - "1337:1337"
